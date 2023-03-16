@@ -10,7 +10,7 @@ export default function Navbar(){
             height={150}>
             </Image>
             <h1 className="font-bold italic"></h1>
-            <h1 className="font-bold text-lg">► Rework App</h1>
+            <h1 className="font-bold text-sm">Rework App</h1>
         </nav>
         </>
     )

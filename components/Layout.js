@@ -19,7 +19,6 @@ export default function Layout({children}) {
             <div className="bg-white text-dark">
                 <Navbar />
                 {children}
-                <Footer />
             </div>
         </div>
 

@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import { Inter } from 'next/font/google'
 import Signin from './signin';
 
@@ -7,6 +8,7 @@ export default function Home() {
   return (
     <>
     <Signin />
+    <Footer />
     </>
   )
 }

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import Footer from '@/components/Footer';
 
 export default function Signin() {
   return (
@@ -25,7 +26,7 @@ export default function Signin() {
           </Link>
         </div>
       </div>
-
+    <Footer />
     </>
   )
 }
