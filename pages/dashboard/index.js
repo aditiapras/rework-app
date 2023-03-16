@@ -1,19 +1,60 @@
 import Footer from "@/components/Footer";
+import Link from "next/link";
+import { FaPlusCircle } from "react-icons/fa";
+import { FaSignOutAlt } from "react-icons/fa";
 
-export default function Dashboard(){
-    return(
-        <>
-        <div className="flex flex-col justify-center w-full items-center gap-3 border h-screen py-16">
-            <div className="w-2/3">
-                <h1 className="font-bold text-3xl mt-2">Dashboard</h1>
-            </div>
-            <div className="w-2/3 h-full border-2 border-dashed rounded-xl p-3">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus obcaecati tempore commodi porro, ab harum sit facilis eveniet et omnis illum nobis quis, nam suscipit. Labore nostrum consectetur accusamus dolore commodi quos, adipisci error eligendi impedit repellat soluta earum iusto esse aliquam ut dignissimos, id placeat, et cumque!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis esse est magnam unde sit nihil beatae a nisi eaque corporis.</p>
-                <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci numquam quos magnam ipsum rerum similique at, nulla facere assumenda dolorem!</h1>
-            </div>
+export default function Dashboard() {
+  return (
+    <>
+      <div className="flex flex-col justify-center w-full items-center gap-3 border h-screen py-16">
+        <div className="w-2/3">
+          <h1 className="font-bold text-3xl mt-2">Dashboard</h1>
         </div>
-        <Footer />
-        </>
-    )
+        <div className="flex w-2/3 h-full  rounded-xl ">
+          <div className="flex flex-col justify-between border-r-2  w-1/6 px-3 py-5">
+            <div className="flex flex-col items-start w-full gap-7">
+              <Link href="#">
+                <div className="group flex items-center gap-2 w-full">
+                  <FaPlusCircle className="group-hover:text-blue-600"></FaPlusCircle>
+                  <h1 className="text-xl font-bold group-hover:text-blue-600">
+                    Input Barcode
+                  </h1>
+                </div>
+              </Link>
+              <Link href="#">
+                <div className="group flex items-center gap-2 w-full">
+                  <FaPlusCircle className="group-hover:text-blue-600"></FaPlusCircle>
+                  <h1 className="text-xl font-bold group-hover:text-blue-600">
+                    Performance
+                  </h1>
+                </div>
+              </Link>
+              <Link href="#">
+                <div className="group flex items-center gap-2 w-full">
+                  <FaPlusCircle className="group-hover:text-blue-600"></FaPlusCircle>
+                  <h1 className="text-xl font-bold group-hover:text-blue-600">
+                    View Sheet
+                  </h1>
+                </div>
+              </Link>
+            </div>
+            <div className="">
+              <Link href="#">
+                <div className="group flex items-center gap-2 w-full">
+                  <FaSignOutAlt className="group-hover:text-blue-600"></FaSignOutAlt>
+                  <h1 className="text-xl font-bold group-hover:text-blue-600">
+                    Sign out
+                  </h1>
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className="flex w-5/6 p-2 border-dashed border ml-2 rounded-xl">
+            {/* Component Place */}
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </>
+  );
 }
